@@ -38,7 +38,7 @@
         
         <div class="gallery">
             <!-- Santorini -->
-            <div class="card">
+            <div class="card" data-id="santorini">
                 <div class="card-image-wrapper">
                     <img src="assets/images/santorini.png" alt="산토리니, 그리스" class="card-image">
                 </div>
@@ -50,7 +50,7 @@
             </div>
 
             <!-- Swiss Alps -->
-            <div class="card">
+            <div class="card" data-id="swiss">
                 <div class="card-image-wrapper">
                     <img src="assets/images/swiss_alps.png" alt="스위스 알프스, 라우터브루넨" class="card-image">
                 </div>
@@ -62,7 +62,7 @@
             </div>
 
             <!-- Kyoto -->
-            <div class="card">
+            <div class="card" data-id="kyoto">
                 <div class="card-image-wrapper">
                     <img src="assets/images/kyoto.png" alt="교토, 일본" class="card-image">
                 </div>
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Norway -->
-            <div class="card">
+            <div class="card" data-id="norway">
                 <div class="card-image-wrapper">
                     <img src="assets/images/norway.png" alt="트롬쇠, 노르웨이" class="card-image">
                 </div>
@@ -86,7 +86,7 @@
             </div>
 
             <!-- Paris -->
-            <div class="card">
+            <div class="card" data-id="paris">
                 <div class="card-image-wrapper">
                     <img src="assets/images/paris.png" alt="파리, 프랑스" class="card-image">
                 </div>
@@ -98,7 +98,7 @@
             </div>
 
             <!-- Bora Bora -->
-            <div class="card">
+            <div class="card" data-id="borabora">
                 <div class="card-image-wrapper">
                     <img src="assets/images/borabora.png" alt="보라보라, 프렌치 폴리네시아" class="card-image">
                 </div>
@@ -114,6 +114,23 @@
     <footer>
         <p>© 2026 Wanderlust. All rights reserved.</p>
     </footer>
+
+    <!-- Destination Detail Modal -->
+    <div id="detail-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-image-container">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-text">
+                <span id="modal-tag" class="card-tag"></span>
+                <h3 id="modal-title" class="modal-title"></h3>
+                <p id="modal-desc" class="modal-desc"></p>
+                <div id="modal-detail" class="modal-detail"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
