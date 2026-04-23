@@ -75,6 +75,24 @@ html {
     color: var(--accent);
 }
 
+.lang-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--card-border);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.lang-toggle:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
